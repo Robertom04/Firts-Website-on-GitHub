@@ -3,11 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link rel="stylesheet" href="./style.css">
+  <title>Midterm Project</title>
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    Hello word
+
+<div class="hi">
+  <h3>Hi!! Welcome to my firts page</h3>
+  <h5>By Roberto Morales</h5>
+</div>
+
+  <nav>
+      <button class="boton" onclick="accion()">Menu</button>
+      <a href="about.html" class="list shrink">About</a>
+      <a href="projects.html" class="list shrink">Projects</a>
+      <a href="skills.html" class="list shrink">Skills</a>
+      <a href="workexperience.html" class="list shrink">Work Experiences</a>
+      <a href="contact.html" class="list shrink">Contact</a>
+  </nav>
+
+  <script>
+    function accion(){
+        var ancla = document.getElementsByClassName('list');
+        for(var i=0; i<ancla.length; i++)
+            ancla[i].classList.toggle('shrink')
+    }
+</script>
+
+  
 </body>
 </html>
